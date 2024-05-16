@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCadastro">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:text="Clínica Boa Saúde"
+            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="Crie um Login:"
+            app:layout_constraintBottom_toTopOf="@+id/txtInLoginCad"
+            app:layout_constraintStart_toStartOf="@+id/txtInDataCad"
+            app:layout_constraintTop_toBottomOf="@+id/txtInDataCad" />
+
+        <EditText
+            android:id="@+id/txtInLoginCad"
+            android:layout_width="217dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="1dp"
+            android:ems="10"
+            android:hint="Login"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="Digite sua data de nascimento:"
+            app:layout_constraintBottom_toTopOf="@+id/txtInDataCad"
+            app:layout_constraintStart_toStartOf="@+id/txtInNomeCad"
+            app:layout_constraintTop_toBottomOf="@+id/txtInNomeCad" />
+
+        <EditText
+            android:id="@+id/txtInDataCad"
+            android:layout_width="230dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="1dp"
+            android:ems="10"
+            android:hint="Data de Nascimento"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="Crie uma senha:"
+            app:layout_constraintBottom_toTopOf="@+id/txtInSenhaCad"
+            app:layout_constraintStart_toStartOf="@+id/txtInLoginCad"
+            app:layout_constraintTop_toBottomOf="@+id/txtInLoginCad" />
+
+        <EditText
+            android:id="@+id/txtInSenhaCad"
+            android:layout_width="229dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="1dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="Confirme sua senha:"
+            app:layout_constraintBottom_toTopOf="@+id/txtInSenhaConfCad"
+            app:layout_constraintStart_toStartOf="@+id/txtInSenhaConfCad"
+            app:layout_constraintTop_toBottomOf="@+id/txtInSenhaCad" />
+
+        <EditText
+            android:id="@+id/txtInSenhaConfCad"
+            android:layout_width="229dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="1dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/btnCadastre"
+            app:layout_constraintEnd_toEndOf="@+id/txtInSenhaCad"
+            app:layout_constraintStart_toStartOf="@+id/txtInSenhaCad"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <Button
+            android:id="@+id/btnCadastre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:onClick="cadastrarUser"
+            android:text="Cadastrar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txtInSenhaConfCad"
+            app:layout_constraintStart_toStartOf="@+id/txtInSenhaConfCad"
+            app:layout_constraintTop_toBottomOf="@+id/txtInSenhaConfCad" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="1dp"
+            android:text="Digite seu nome:"
+            app:layout_constraintBottom_toTopOf="@+id/txtInNomeCad"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/txtInNomeCad"
+            android:layout_width="225dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="1dp"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@+id/textView8"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toEndOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
